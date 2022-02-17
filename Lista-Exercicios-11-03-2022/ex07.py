@@ -10,4 +10,4 @@ while True:
     except Exception as ex:
         print('Ocorreu um erro | Erro: ', ex)
 
-print(f'Já se passaram {(mes * 30) + dia} dias desde o começo do ano')
+print(f'Já se passaram {(mes - 1) * 30 + dia} dias desde o começo do ano')
