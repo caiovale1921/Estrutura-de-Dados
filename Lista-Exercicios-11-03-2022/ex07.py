@@ -1,6 +1,3 @@
-from asyncio import trsock
-
-
 while True:
     try:
         dia = int(input('Insira o dia do mês: '))
