@@ -15,7 +15,7 @@ else:
         print('Delta menor que 0. Raízes imaginárias. Tchau')
     elif delta == 0:
         raiz = -b / (2 * a)
-        print('Delta=0 , raiz = ', raiz)
+        print('Delta = 0 , raiz = ', raiz)
     else:
         raiz1 = (-b + math.sqrt(delta)) / (2 * a)
         raiz2 = (-b - math.sqrt(delta)) / (2 * a)

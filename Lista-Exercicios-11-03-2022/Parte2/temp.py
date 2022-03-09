@@ -7,3 +7,5 @@ while True:
         print('Ocorreu um erro | Erro: ', ex)
 
 print(f'Precisa de {((25 * (altura ** 2)) - peso):.2f} KG') 
+
+
