@@ -65,7 +65,7 @@ import os
 vetor = []
 
 while True:
-    vetorType = (int(input('1 - Vetor ordenado\n2 - Vetor desordenado\nSelecione uma opção: ')))
+    vetorType = (int(input('1 - Vetor crescente\n2 - Vetor decrescente\nSelecione uma opção: ')))
     os.system('cls')
     if vetorType == 1:
         vetorOrder = 'Ordenado'
