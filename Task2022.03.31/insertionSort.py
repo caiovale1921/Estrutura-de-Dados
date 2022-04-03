@@ -4,4 +4,5 @@ def insertionSort(self, vetor):
         j = i - 1   
         while j >= 0 and aux < vetor[j]:
             vetor[j + 1] = vetor[j]
+            j = j - 1
         vetor[j + 1] = aux
