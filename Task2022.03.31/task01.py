@@ -59,13 +59,23 @@ def shellSortMetric(vetor):
 
 # Código principal
 
+#region Imports
+
 import os
 import random
 
-vetor = []
+#endregion
 
 while True:
+
+    #region Declarando o vetor
+
     vetor = []
+
+    #endregion
+
+    #region Definindo ordenação e tamanho do vetor
+
     vetorSize = int(input('Escolha o tamanho do vetor: '))
     os.system('cls')
 
@@ -86,6 +96,10 @@ while True:
         for i in range(1, vetorSize):
             vetor.append(random.randint(1, 100))
 
+    #endregion
+
+    #region Menu com interação do usuário
+
     menu = int(input(f'''Vetor: {vetor}\nEscolha o método de ordenação:\n1 - BubbleSort\n2 - Insertion Sort\n3 - Selection Sort\n4 - Shell Sort\nSelecione uma opção: ({vetorOrder}) \n'''))
     
     if menu == 1:
@@ -100,3 +114,5 @@ while True:
     elif menu == 4:
         os.system('cls')
         print(f'Shell Sort - Quantidade de operações realizadas: {shellSortMetric(vetor)} - ({vetorOrder})\nVetor ordenado: {vetor}\n')
+
+    #endregion
