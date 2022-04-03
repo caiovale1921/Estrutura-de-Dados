@@ -1,4 +1,4 @@
-def selectionSort(self, vetor):
+def selectionSort(vetor):
     for i in range(0, len(vetor) - 1):
         for j in range(i + 1, len(vetor)):
             if vetor[i] > vetor[j]:

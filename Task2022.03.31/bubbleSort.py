@@ -1,4 +1,4 @@
-def bubbleSort(self, vetor):
+def bubbleSort(vetor):
     for i in range(len(vetor) - 1 , 0, - 1):
         for i in range(i):
             if vetor[i] > vetor[i + 1]:

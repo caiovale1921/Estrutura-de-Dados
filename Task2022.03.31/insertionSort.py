@@ -1,7 +1,4 @@
-from tkinter.messagebox import RETRY
-
-
-def insertionSort(self, vetor):
+def insertionSort(vetor):
     for i in range(1, len(vetor)):
         aux = vetor[i]
         j = i - 1   
