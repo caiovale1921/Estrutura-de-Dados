@@ -59,23 +59,35 @@ def shellSortMetric(vetor):
 
 # Código principal
 
-import random
 import os
+import random
 
 vetor = []
 
 while True:
-    vetorType = (int(input('1 - Vetor crescente\n2 - Vetor decrescente\nSelecione uma opção: ')))
+    vetor = []
+    vetorSize = int(input('Escolha o tamanho do vetor: '))
     os.system('cls')
+
+    vetorType = (int(input('1 - Vetor crescente\n2 - Vetor decrescente\n3 - Vetor Aleatório\nSelecione uma opção: ')))
+    os.system('cls')
+
     if vetorType == 1:
-        vetorOrder = 'Ordenado'
-        vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        vetorOrder = 'Crescente'
+        for i in range(0, vetorSize):
+            vetor.append(i + 1)
+
+    elif vetorType == 2:
+        vetorOrder = 'Decrescente'
+        for i in range(vetorSize,0 , -1):
+            vetor.append(i)
     else:
-        vetorOrder = 'Desordenado'
-        vetor = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-    #for i in range(0, 10):
-    #    vetor.append(random.randint(1,52))
-    menu = int(input(f'''Escolha o método de ordenação:\n1 - BubbleSort\n2 - Insertion Sort\n3 - Selection Sort\n4 - Shell Sort\nSelecione uma opção: ({vetorOrder}) \n'''))
+        vetorOrder = 'Aleatório'
+        for i in range(1, vetorSize):
+            vetor.append(random.randint(1, 100))
+
+    menu = int(input(f'''Vetor: {vetor}\nEscolha o método de ordenação:\n1 - BubbleSort\n2 - Insertion Sort\n3 - Selection Sort\n4 - Shell Sort\nSelecione uma opção: ({vetorOrder}) \n'''))
+    
     if menu == 1:
         os.system('cls')
         print(f'BubbleSort - Quantidade de operações realizadas: {bubbleSortMetric(vetor)} - ({vetorOrder})\nVetor ordenado: {vetor}\n')
