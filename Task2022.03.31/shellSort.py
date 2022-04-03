@@ -10,3 +10,4 @@ def shellSort(vetor):
                 j -= gap
             vetor[j] = temp
         gap /= 2
+    return vetor

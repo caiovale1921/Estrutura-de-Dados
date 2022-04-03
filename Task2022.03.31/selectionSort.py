@@ -5,3 +5,4 @@ def selectionSort(self, vetor):
                 aux = vetor[i]
                 vetor[i] = vetor[j]
                 vetor[j] = aux
+    return vetor

@@ -5,3 +5,4 @@ def bubbleSort(self, vetor):
                 aux = vetor[i]
                 vetor[i] = vetor[i + 1]
                 vetor[i + 1] = aux
+    return vetor
